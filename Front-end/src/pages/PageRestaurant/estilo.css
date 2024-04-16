@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.logo{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.usuario{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.icon{
+    margin-left: 2px;
+}
+
+.bodyHome{
+    background: url(./DELIVERY-MAIS.jpg);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0;
+}
+
+.headerMenu{
+    padding: 40px, 4%;
+    font-size:larger;
+    border-color: black;
+}
+
+.headerMenu > .interface{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.headerMenu nav ul li{
+    display: inline-block;
+    padding: 0 40px 10px 0;
+    text-decoration: none;
+    position: relative;
+    font-size: 20pt;
+    text-align: end;
+    position: relative;
+}
+
+
+nav ul li::after{
+    content: "  ";
+    width: 0%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li:hover::after{
+    width: 80%;
+}
+
+
+img{
+    padding: 0 40px;
+    width: 190px;
+    height: 50px;
+}
+
+.usuario{
+    align-items:end;
+}
+
+.line {
+    background-color: #3E445B;
+    height: 2px;
+}
+
+.carde{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin: 0 auto;
+    background-color: #e4414c;
+    padding: 30px 40px;
+    width: 600px;
+    border-radius: 7px;
+    margin-top: 40px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btns button {
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 1.3rem;
+    border: 0;
+    border-radius: 10px;
+    font-family: Heebo;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px 40px;
+}
+
+.btn-edit button{
+    background-color: #7c1212;
+}
+
+.btn-readmore button{
+    background-color: #7c1212;
+}
+
+.btn-newPost button{
+    font-size: 1.2rem;
+    font-family: Heebo;
+    font-weight: 700;
+    background-color: #bc1010;
+    border: 0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 640px;
+    margin-top: 30px;
+}

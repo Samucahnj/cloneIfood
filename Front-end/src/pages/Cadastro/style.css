@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.logo{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.usuario{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.icon{
+    margin-left: 2px;
+}
+
+.bodyHome{
+    background: url(./DELIVERY-MAIS.jpg);
+    height: 100vh;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0;
+
+}
+
+.headerMenu{
+    padding: 40px, 4%;
+    font-size:larger;
+    border-color: black;
+
+}
+
+.headerMenu > .interface{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.headerMenu nav ul li{
+    display: inline-block;
+    padding: 0 40px 10px 0;
+    text-decoration: none;
+    position: relative;
+    font-size: 20pt;
+    text-align: end;
+    position: relative;
+}
+
+.legenda {
+    text-align: left;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font-weight: bold;
+}
+
+.textLeft{
+    margin-left: 20%;
+}
+
+nav ul li::after{
+    content: "  ";
+    width: 0%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li:hover::after{
+    width: 80%;
+}
+
+
+img{
+    padding: 0 40px;
+    width: 190px;
+    height: 50px;
+
+}
+
+.usuario{
+    align-items:end;
+}
