@@ -35,21 +35,15 @@ function AddRestaurant (){
                   <input  type="text" name="name" {...register("name")} placeholder='Nome' required />
                 </div>
 
-                <div className='input-box'>
-                  <input  type="text" name="category" {...register("category")} placeholder='Categoria' required />
-                </div>
+              
                     
                 <div className='input-box'>
                   <input  type="text" name="description" {...register("description")} placeholder='Descrição' required />
                 </div>
 
-                <div className='input-box'>
-                  <input  type="text" name="image" {...register("image")} placeholder='Endereço' required />
-                </div>
+                
 
-                <div className='input-box'>
-                  <input  type="text" name="dish_id" {...register("dish_id")} placeholder='numero' required />
-                </div>
+                
                
                 <button type="submit" className="btn">Salvar Dados</button>
                     

@@ -125,8 +125,9 @@ main .cards .card {
 .cards .card header {
     display: flex;
     justify-content: space-between;
-
-    margin-bottom: 15px;
+    background-color:rgb(123, 16, 16);
+    margin-top: 15px;
+    margin-bottom: 19px;
 }
 
 .card header h2 {
@@ -196,3 +197,39 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.cart {
+    width: 100%;
+    max-width: 330px;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 100px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(110%, 0);
+    transition: all 400ms ease;
+  }
+  
+  .cart-items {
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .cart-resume {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 35px 0 15px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .cart-items .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .cart--active {
+    transform: translate(0, 0);
+  }

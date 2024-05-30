@@ -50,10 +50,6 @@ function EditRestaurant (){
                 </div>
 
                 <div className='input-box'>
-                  <input  type="text" name="category" {...register("category")} placeholder='Categoria' required />
-                </div>
-                    
-                <div className='input-box'>
                   <input  type="text" name="description" {...register("description")} placeholder='Descrição' required />
                 </div>
 

@@ -9,6 +9,8 @@ import Cadastrar from './pages/cadastrar'
 import PageRestaurant from './pages/PageRestaurant';
 import EditRestaurant from './pages/EditRestaurant';
 import AddRestaurant from './pages/AddRestaurant';
+import AddAddress from './pages/AddAddress';
+import EditAddress from './pages/EditAddress';
 import api from './axios'
 
 
@@ -74,7 +76,9 @@ function App() {
             <Route path="/cadastrar" element={<Cadastrar/>}/>
             <Route path="/PageRestaurant/:id" element={<PageRestaurant/>}/>
             <Route path="/EditRestaurant/:id" element={<EditRestaurant/>}/>
+            <Route path="/AddAddress" element={<AddAddress/>}/>
             <Route path="/AddRestaurant" element={<AddRestaurant/>}/>
+            <Route path="/EditAddress/:id" element={<EditAddress/>}/>
             </Routes>
         </Router>
   );

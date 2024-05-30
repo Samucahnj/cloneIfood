@@ -5,12 +5,13 @@ import { FaUserGear } from "react-icons/fa6";
 import {Link} from "react-router-dom";
 import api  from '../../axios';
 
+
 function Home (){
 
     const [restaurants, setRestaurants] = useState([])
     
     useEffect(() => {
-        api.get("/list-restaurant")
+        api.get("/restaurant")
         .then((response) => {
             setRestaurants(response.data)
         })
@@ -23,8 +24,8 @@ function Home (){
     const nome = localStorage.getItem('name')
 
     return(
+        
         <body className="bodyHome">
-            
         <header className="headerMenu">
                 <div className="interface">
                     <div className="logo">
@@ -41,7 +42,7 @@ function Home (){
                     </div> 
                 </div>
             </header>
-
+            
             <main>
             <div className="cards">
 
@@ -64,6 +65,12 @@ function Home (){
                             </Link>
                         </div>
 
+                        <div className="btn-edit">
+                            <Link to={{pathname: `/EditAddress/5`}}>
+                                <button>Endereço</button>
+                            </Link>
+                        </div>
+
                         <div className="btn-readmore" >  
                             <Link to={{pathname: `/pageRestaurant/${restaurant.id}`}}>
                                 <button>Ver mais</button>
@@ -80,8 +87,12 @@ function Home (){
                 <Link to="/AddRestaurant">
                 <button>Adicionar novo restaurante</button>
                 </Link>
+                <Link to="/AddAddress">
+                <button>Adicionar novo endereço</button>
+                </Link>
             </div>
             </main>
+            
         </body>
     )}
 
